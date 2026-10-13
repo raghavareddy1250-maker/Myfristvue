@@ -21,10 +21,10 @@ function decrement() {
 
 <template>
   <div class="counter-card">
-    <h2>MY new Vue 3 Counter</h2>
+    <h2>MY New Vue 3 Counter</h2>
     
     <!-- Text Interpolation -->
-    <p class="count-display">Current Count: <strong>{{ count }}</strong></p>
+    <p class="count-display">Current Count: <strong class="count-value">{{ count }}</strong></p>
     <p class="computed-display">Double Count: {{ doubleCount }}</p>
 
     <!-- Event Handling -->
@@ -54,6 +54,10 @@ function decrement() {
 
 .count-display {
   font-size: 1.2rem;
+}
+
+.count-value {
+  color: #ff0000;
 }
 
 .computed-display {
