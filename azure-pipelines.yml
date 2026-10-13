@@ -28,3 +28,15 @@ steps:
     workingDir: 'Client'
     customCommand: 'run build'
   displayName: 'Build Node.js'
+
+- task: CopyFiles@2
+  inputs:
+    Contents: 'Client/dist/**'
+    TargetFolder: $(Build.ArtifactStagingDirectory)
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'release'
+    publishLocation: 'Container'
