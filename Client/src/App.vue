@@ -25,7 +25,7 @@ function decrement() {
     
     <!-- Text Interpolation -->
     <p class="count-display">Current Count: <strong class="count-value">{{ count }}</strong></p>
-    <p class="computed-display">Double Count: {{ doubleCount }}</p>
+    <p class="computed-display">Double Count: <strong class="count-value">{{ doubleCount }}</strong></p>
 
     <!-- Event Handling -->
     <div class="actions">
