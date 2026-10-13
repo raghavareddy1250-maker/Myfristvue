@@ -21,7 +21,7 @@ function decrement() {
 
 <template>
   <div class="counter-card">
-    <h2>Vue 3 Counter</h2>
+    <h2>MY Vue 3 Counter</h2>
     
     <!-- Text Interpolation -->
     <p class="count-display">Current Count: <strong>{{ count }}</strong></p>
