@@ -6,6 +6,7 @@ dist/
 Client/coverage/
 
 # Local environment files
+azure-pipelines.yml
 Client/.env
 Client/.env.*
 Client/!.env.example
