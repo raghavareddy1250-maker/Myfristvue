@@ -1,0 +1,29 @@
+# Dependencies
+Client/node_modules/
+
+# Build output
+dist/
+Client/coverage/
+
+# Local environment files
+Client/.env
+Client/.env.*
+Client/!.env.example
+
+# Logs
+Client/npm-debug.log*
+Client/yarn-debug.log*
+Client/pnpm-debug.log*
+
+# Tool caches
+Client/.vite/
+Client/.eslintcache
+Client/.stylelintcache
+
+# Editor and OS files
+Client/.DS_Store
+Client/Thumbs.db
+Client/.idea/
+Client/.vscode/*
+Client/!.vscode/extensions.json
+Client/!.vscode/settings.json
