@@ -9,19 +9,24 @@ const isActiveLink = (routePath) => {
 </script>
 
 <template>
-  <nav class="bg-green-700 border-b border-green-500">
+  <nav class="bg-black border-b border-green-500">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <div
           class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
         >
           <!-- Logo -->
-          <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
-            <img class="h-10 w-auto" :src="logo" alt="Vue Jobs" />
-            <span class="hidden md:block text-white text-2xl font-bold ml-2"
-              >Vue Jobs</span
-            >
-          </RouterLink>
+         <RouterLink
+  to="/"
+  active-class=""
+  exact-active-class=""
+  class="flex flex-shrink-0 items-center mr-4"
+>
+  <img class="h-10 w-auto" :src="logo" alt="Jobs Portal" />
+  <span class="hidden md:block text-white text-2xl font-bold ml-2">
+   Jobs Portal
+  </span>
+</RouterLink>
           <div class="md:ml-auto">
             <div class="flex space-x-2">
               <RouterLink

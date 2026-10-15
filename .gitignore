@@ -1,5 +1,6 @@
 # Dependencies
 Client/node_modules/
+Server/node_modules/
 azure-pipelines.yml
 
 # Build output
@@ -11,6 +12,7 @@ azure-pipelines.yml
 Client/.env
 Client/.env.*
 Client/!.env.example
+
 
 # Logs
 Client/npm-debug.log*

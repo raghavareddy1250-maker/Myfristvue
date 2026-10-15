@@ -40,6 +40,7 @@ const router = createRouter({
       component: NotFoundView,
     },
   ],
+    linkActiveClass: 'router-link-active router-link-exact-active bg-blue-900 text-white',
 });
 
 export default router;

@@ -1,9 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import JobListing from './JobListing.vue';
-import { reactive, defineProps, onMounted } from 'vue';
+import { reactive, defineProps, onMounted, onBeforeMount } from 'vue';
 import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 import axios from 'axios';
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
 defineProps({
   limit: Number,
@@ -19,11 +20,12 @@ const state = reactive({
 });
 
 onMounted(async () => {
-  console.log('Fetching jobs...');
+  //console.log('Fetching jobs...');
   try {
-    const response = await axios.get('/api/jobs');
-    state.jobs = response.data;
-    console.log('Fetched jobs:', state.jobs);
+    const response = await axios.get(`${apiUrl}/jobs`);
+  // console.log('Response from API:', response.data.jobs.jobs);
+    state.jobs = response.data.jobs;
+    // console.log('Fetched jobs:', state.jobs);
   } catch (error) {
     console.error('Error fetching jobs', error);
   } finally {

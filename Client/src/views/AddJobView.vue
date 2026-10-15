@@ -3,6 +3,7 @@ import router from '@/router';
 import { reactive } from 'vue';
 import { useToast } from 'vue-toastification';
 import axios from 'axios';
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
 const form = reactive({
   type: 'Full-Time',
@@ -36,9 +37,9 @@ const handleSubmit = async () => {
   };
 
   try {
-    const response = await axios.post('/api/jobs', newJob);
+    const response = await axios.post(`${apiUrl}/jobs`, newJob);
     toast.success('Job Added Successfully');
-    router.push(`/jobs/${response.data.id}`);
+    router.push(`/jobs/${response.data.job.id}`);
   } catch (error) {
     console.error('Error fetching job', error);
     toast.error('Job Was Not Added');
@@ -83,7 +84,7 @@ const handleSubmit = async () => {
               id="name"
               name="name"
               class="border rounded w-full py-2 px-3 mb-2"
-              placeholder="eg. Beautiful Apartment In Miami"
+              placeholder="eg. Full Stack Developer"
               required
             />
           </div>
