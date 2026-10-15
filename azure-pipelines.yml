@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  VITE_API_BASE_URL: 'https://myvueproject-fahzgmaxf7h9cmfp.westus3-01.azurewebsites.net/api'
+
+
 steps:
 - task: UseNode@1
   inputs:
@@ -24,14 +28,24 @@ steps:
 
 - task: Npm@1
   inputs:
+    command: 'install'
+    workingDir: 'Server'
+  displayName: 'Installing Node modules in Server'
+
+
+- task: Npm@1
+  inputs:
     command: 'custom'
     workingDir: 'Client'
     customCommand: 'run build'
   displayName: 'Build Node.js'
 
+
 - task: CopyFiles@2
   inputs:
-    Contents: 'Client/dist/**'
+    Contents: |
+      Client/dist/**
+      Server/**
     TargetFolder: $(Build.ArtifactStagingDirectory)
 
 
