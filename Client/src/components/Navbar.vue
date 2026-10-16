@@ -42,7 +42,7 @@ const isActiveLink = (routePath) => {
                 ]"
                 >Home</RouterLink
               >
-              <RouterLink
+              <!--<RouterLink
                 to="/jobs"
                 :class="[
                   isActiveLink('/jobs')
@@ -67,7 +67,7 @@ const isActiveLink = (routePath) => {
                   'rounded-md',
                 ]"
                 >Add Job</RouterLink
-              >
+              >-->
             </div>
           </div>
         </div>
