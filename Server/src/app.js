@@ -38,7 +38,8 @@ const frontendPath = path.resolve(__dirname, '..');
 
 app.get('/', (req, res) => {
   console.log('Serving index.html from frontendPath:', frontendPath);
-  res.json({ message: 'Backend is running' });
+  res.sendFile(path.join(frontendPath, 'index.html'));
+  //res.json({ message: 'Backend is running' });
 });
 
 module.exports = app;
