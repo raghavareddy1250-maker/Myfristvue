@@ -38,7 +38,7 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/Client/dist'
     Contents: '**'
-    TargetFolder: '$(System.DefaultWorkingDirectory)/Server/dist'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/Server'
 
 
 - task: Npm@1
