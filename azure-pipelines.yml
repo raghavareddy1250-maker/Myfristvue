@@ -38,7 +38,7 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/Client/dist'
     Contents: '**'
-    TargetFolder: '$(System.DefaultWorkingDirectory)'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/Server'
 
 
 - task: Npm@1
@@ -49,7 +49,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Server'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
