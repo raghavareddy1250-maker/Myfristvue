@@ -52,11 +52,11 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Server'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/MyVueProject.zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/MyVueProject.zip'
     ArtifactName: 'release'
     publishLocation: 'Container'
