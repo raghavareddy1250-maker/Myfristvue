@@ -1,6 +1,7 @@
 # Dependencies
 Client/node_modules/
 Server/node_modules/
+Server/index.html
 azure-pipelines.yml
 
 # Build output
