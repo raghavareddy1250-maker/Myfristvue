@@ -28,13 +28,6 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'install'
-    workingDir: 'Server'
-  displayName: 'Installing Node modules in Server'
-
-
-- task: Npm@1
-  inputs:
     command: 'custom'
     workingDir: 'Client'
     customCommand: 'run build'
@@ -43,14 +36,27 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    Contents: |
-      Client/dist/**
-      Server/**
-    TargetFolder: $(Build.ArtifactStagingDirectory)
+    SourceFolder: '$(System.DefaultWorkingDirectory)/Client/dist'
+    Contents: '**'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/Server/dist'
 
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'Server'
+  displayName: 'Installing Node modules in Server'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Server'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'release'
     publishLocation: 'Container'
