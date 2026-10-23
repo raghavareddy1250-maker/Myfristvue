@@ -113,17 +113,18 @@ const handleSubmit = async () => {
               class="border rounded w-full py-2 px-3"
               required
             >
-              <option value="Under $50K">under $50K</option>
-              <option value="$50K - $60K">$50 - $60K</option>
-              <option value="$60K - $70K">$60 - $70K</option>
-              <option value="$70K - $80K">$70 - $80K</option>
-              <option value="$80K - $90K">$80 - $90K</option>
-              <option value="$90K - $100K">$90 - $100K</option>
-              <option value="$100K - $125K">$100 - $125K</option>
-              <option value="$125K - $150K">$125 - $150K</option>
-              <option value="$150K - $175K">$150 - $175K</option>
-              <option value="$175K - $200K">$175 - $200K</option>
-              <option value="Over $200K">Over $200K</option>
+              <option value="Under ₹5L">under ₹5L</option>
+              <option value="₹5L - ₹6L">₹5L - ₹6L</option>
+              <option value="₹6L - ₹7L">₹6L - ₹7L</option>
+              <option value="₹7L - ₹8L">₹7L - ₹8L</option>
+              <option value="₹8L - ₹9L">₹8L - ₹9L</option>
+              <option value="₹9L - ₹10L">₹9L - ₹10L</option>
+              <option value="₹10L - ₹12L">₹10L - ₹12L</option>
+              <option value="₹12L - ₹15L">₹12L - ₹15L</option>
+              <option value="₹15L - ₹18L">₹15L - ₹18L</option>
+              <option value="₹18L - ₹20L">₹18L - ₹20L</option>
+              <option value="Over ₹20L">Over ₹20L</option>
+            
             </select>
           </div>
 
