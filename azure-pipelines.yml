@@ -36,10 +36,10 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    Contents: |
-      Client/dist/**
-      Server/**
-    TargetFolder: '$(System.DefaultWorkingDirectory)'
+    SourceFolder: '$(System.DefaultWorkingDirectory)/Client/dist'
+    Contents: '**'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/Server'
+  displayName: 'Copy vue build files in Server folder'
 
 
 - task: Npm@1
@@ -50,7 +50,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Server'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/MyVueProject.zip'
