@@ -40,7 +40,7 @@ onMounted(async () => {
     console.error('Error fetching job', error);
   } finally {
     state.isLoading = false;
-  }
+  } 
 });
 </script>
 

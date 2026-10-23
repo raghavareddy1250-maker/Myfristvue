@@ -1,114 +1,115 @@
 {
   "jobs": [
     {
-      "title": "Senior Vue Dev",
+      "title": "Senior Vue.js Developer",
       "type": "Full-Time",
-      "location": "Boston, MA",
-      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as Vue or Angular.",
-      "salary": "$90K - $100K",
+      "location": "Bengaluru, Karnataka, India",
+      "description": "We are looking for a Senior Vue.js Developer to build and maintain responsive web applications. You should have strong JavaScript, HTML, and CSS skills, experience with Vue.js, and the ability to collaborate with product and design teams.",
+      "salary": "₹12L–20L",
       "company": {
         "name": "NewTek Solutions",
-        "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-        "contactEmail": "contact@teksolutions.com",
-        "contactPhone": "555-555-5555"
+        "description": "NewTek Solutions is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers1@example.com"
       },
       "id": "1"
     },
     {
       "id": "2",
-      "title": "Front-End Engineer (Vue)",
+      "title": "Front-End Engineer (Vue.js)",
       "type": "Full-Time",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-      "location": "Miami, FL",
-      "salary": "$70K - $80K",
+      "description": "Join our front-end team to create accessible, responsive web experiences. The ideal candidate understands Vue.js, UI/UX principles, reusable components, and performance optimization, and enjoys working closely with designers and backend engineers.",
+      "location": "Hyderabad, Telangana, India",
+      "salary": "₹8L–16L",
       "company": {
         "name": "Veneer Solutions",
-        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-        "contactEmail": "contact@loremipsum.com",
-        "contactPhone": "555-555-5555"
+        "description": "Veneer Solutions is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers2@example.com"
       }
     },
     {
       "id": "3",
       "title": "Vue.js Developer",
       "type": "Full-Time",
-      "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-      "location": "Brooklyn, NY",
-      "salary": "$70K - $80K",
+      "description": "We are seeking a Vue.js Developer to develop user-friendly interfaces and contribute to real-world product features. You should be comfortable with JavaScript, component-based development, API integration, debugging, and collaborative code reviews.",
+      "location": "Pune, Maharashtra, India",
+      "salary": "₹6L–12L",
       "company": {
         "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-        "contactEmail": "contact@dolorsitamet.com",
-        "contactPhone": "555-555-5555"
+        "description": "Dolor Cloud is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers3@example.com"
       }
     },
     {
       "id": "4",
-      "title": "Vue Front-End Developer",
+      "title": "Part-Time Front-End Developer",
       "type": "Part-Time",
-      "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
-      "salary": "$60K - $70K",
+      "description": "We need a part-time Front-End Developer to help build and improve web interfaces. Familiarity with HTML, CSS, JavaScript, and Vue.js is preferred. Flexible scheduling may be available, with remote or hybrid work depending on team requirements.",
+      "location": "Chennai, Tamil Nadu, India",
+      "salary": "₹4L–8L",
       "company": {
         "name": "Alpha Elite",
-        "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
-        "contactEmail": "contact@adipisicingelit.com",
-        "contactPhone": "555-555-5555"
+        "description": "Alpha Elite is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers4@example.com"
       }
     },
     {
       "id": "5",
-      "title": "Full Stack Vue Developer",
+      "title": "Full-Stack Developer (Vue.js)",
       "type": "Full-Time",
-      "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
-      "location": "Atlanta, GA",
-      "salary": "$90K - $100K",
+      "description": "Help build and scale web applications across the front end and back end. Candidates should have experience with Vue.js, JavaScript, API integration, databases, and writing maintainable code. You will work with a cross-functional team to deliver reliable features.",
+      "location": "Mumbai, Maharashtra, India",
+      "salary": "₹10L–18L",
       "company": {
         "name": "Browning Technologies",
-        "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
-        "contactEmail": "contact@consecteturadipisicing.com",
-        "contactPhone": "555-555-5555"
+        "description": "Browning Technologies is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers5@example.com"
       }
     },
     {
       "id": "6",
-      "title": "Vue Native Developer",
+      "title": "Vue.js Application Developer",
       "type": "Full-Time",
-      "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-      "location": "Portland, OR",
-      "salary": "$100K - $110K",
+      "description": "We are looking for an application developer to build modern web interfaces and improve existing products. Experience with Vue.js, JavaScript, responsive design, testing, and troubleshooting is valuable. The role includes collaborating with engineering and product teams.",
+      "location": "Gurugram, Haryana, India",
+      "salary": "₹8L–15L",
       "company": {
         "name": "Port Solutions INC",
-        "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
-        "contactEmail": "contact@ipsumlorem.com",
-        "contactPhone": "555-555-5555"
+        "description": "Port Solutions INC is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5555",
+        "contactEmail": "careers6@example.com"
       }
     },
     {
-      "title": "Software ",
+      "title": "Full-Stack Developer",
       "type": "Part-Time",
-      "location": "hyderabad",
-      "description": "Software Engineer",
-      "salary": "Over $200K",
+      "location": "Noida, Uttar Pradesh, India",
+      "description": "We are hiring a Full-Stack Developer to develop and maintain web applications. The role involves front-end development, backend/API integration, database work, testing, and collaboration with the wider team. Practical project experience and a problem-solving mindset are important.",
+      "salary": "₹6L–14L",
       "company": {
         "name": "Self",
-        "description": "company description",
-        "contactEmail": "raghu.rma@gmail.com",
-        "contactPhone": "09949955595"
+        "description": "Self is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "09949955595",
+        "contactEmail": "careers7@example.com"
       },
       "id": "ZaxcIM7UR-w"
     },
     {
       "id": 7,
-      "title": "Full stack developer",
+      "title": "Software Engineer",
       "company": {
         "name": "Soft Clouds",
-        "description": "Soft Clouds",
-        "contactEmail": "bekkamraghavareddy@gmail.com",
-        "contactPhone": "555-555-5554"
+        "description": "Soft Clouds is hiring in India for technology roles. The team focuses on building and maintaining digital products and values collaboration, continuous learning, and reliable software delivery.",
+        "contactPhone": "555-555-5554",
+        "contactEmail": "careers8@example.com"
       },
-      "location": "Hyderabad",
-      "description": "Full Stack Developer required"
+      "location": "Hyderabad, Telangana, India",
+      "description": "We are seeking a Software Engineer to design, develop, test, and maintain software solutions. The successful candidate will work with teammates to understand requirements, troubleshoot issues, and deliver clean, reliable code.",
+      "salary": "₹5L–12L"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
