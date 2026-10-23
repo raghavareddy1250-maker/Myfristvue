@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, useRoute } from 'vue-router';
 import logo from '@/assets/img/logo.png';
+const AppName = import.meta.env.VITE_APP_NAME;
 
 const isActiveLink = (routePath) => {
   const route = useRoute();
@@ -24,7 +25,7 @@ const isActiveLink = (routePath) => {
 >
   <img class="h-10 w-auto" :src="logo" alt="Jobs Portal" />
   <span class="hidden md:block text-white text-2xl font-bold ml-2">
-   Jobs Portal
+   {{ AppName }}
   </span>
 </RouterLink>
           <div class="md:ml-auto">
