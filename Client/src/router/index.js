@@ -1,46 +1,51 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@/views/HomeView.vue';
-import JobsView from '@/views/JobsView.vue';
-import NotFoundView from '@/views/NotFoundView.vue';
-import JobView from '@/views/JobView.vue';
-import AddJobView from '@/views/AddJobView.vue';
-import EditJobView from '@/views/EditJobView.vue';
-
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "@/views/HomeView.vue";
+import JobListing from "@/components/JobListing.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
+import JobView from "@/views/JobView.vue";
+import JobsView from "@/views/JobsView.vue";
+import AddJobView from "@/views/AddJobView.vue";
+import EditJobView from "@/views/EditJobView.vue";
+import TasksView from "@/views/TasksView.vue";
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/jobs',
-      name: 'jobs',
-      component: JobsView,
-    },
-    {
-      path: '/jobs/:id',
-      name: 'job',
-      component: JobView,
-    },
-    {
-      path: '/jobs/add',
-      name: 'add-job',
-      component: AddJobView,
-    },
-    {
-      path: '/jobs/edit/:id',
-      name: 'edit-job',
-      component: EditJobView,
-    },
-    {
-      path: '/:catchAll(.*)',
-      name: 'not-found',
-      component: NotFoundView,
-    },
-  ],
-    linkActiveClass: 'router-link-active router-link-exact-active bg-blue-900 text-white',
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path:'/',
+            name:'home',
+            component:HomeView
+        },
+         {
+            path:'/jobs',
+            name:'jobs',
+            component:JobsView
+        },
+         {
+            path:'/Jobs/:id',
+            name:'job',
+            component:JobView
+        },
+         {
+            path:'/jobs/add',
+            name:'add-job',
+            component:AddJobView
+        },
+         {
+            path:'/jobs/edit/:id',
+            name:'edit-job',
+            component:EditJobView
+        },
+         {
+            path:'/tasks',
+            name:'tasks',
+            component:TasksView
+        },
+         {
+            path:'/:catchAll(.*)',
+            name:'not-found',
+            component:NotFoundView
+        },
+    ],
+    linkActiveClass:'router-link-active router-link-exact-active bg-blue-900 text-white',
 });
-
 export default router;
